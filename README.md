@@ -47,7 +47,7 @@ docker build -t <name:tag> .
 docker run -p 8080:8080 <name:tag>
 ```
 
-- To run the Scraper with the Conductor and the Schellar
+- To run the Scraper with the Conductor
 
 ``` bash
 docker-compose up --build
