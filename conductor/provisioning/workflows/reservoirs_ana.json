@@ -1,0 +1,21 @@
+{
+  "name": "reservoir_retrieve",
+  "description": "Retrieve data from ANA WS",
+  "version": 1,
+  "tasks": [
+    {
+      "name": "reservoir_retrieve",
+      "taskReferenceName": "retrieve",
+      "type": "SIMPLE",
+      "inputParameters": {
+        "code": "${workflow.input.code}",
+        "from": "${workflow.input.from}",
+        "to": "${workflow.input.to}"
+    }
+    }
+  ],
+  "failureWorkflow": "cleanup_encode_resources",
+  "restartable": true,
+  "workflowStatusListenerEnabled": true,
+  "schemaVersion": 2
+}
